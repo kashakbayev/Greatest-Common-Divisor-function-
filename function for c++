@@ -1,0 +1,14 @@
+int nod(int a,int b)
+{
+    if(a<b)
+    {
+     a=a+b;
+        b=a-b;
+        a=a-b;
+    }
+    if(a%b!=0)
+    {
+     return nod(a%b,b); 
+    }
+    else return b;
+}
